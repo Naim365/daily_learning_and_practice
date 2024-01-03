@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS basic</title>
+  </head>
+  <body>
+    <h1 style="margin-left: 200px;">Javascript Basics</h1>
+
+    <!-- TODO 01  -->
+    <!-- JavaScript Can Change HTML Content -->
+    <h2>TODO 01</h2>
+    <p id="jsmo1">JavaScript Can Change HTML Content</p>
+    <button onclick="document.getElementById('jsmo1').innerHTML='I am change'">
+      Change Element
+    </button>
+
+    <!-- TODO 02  -->
+    <!-- JavaScript Can Change HTML Attribute Values -->
+    <h2>TODO 02</h2>
+    <p id="jsm02">Show Image Here</p>
+
+    <button onclick="openImage()">open image</button>
+
+    <script>
+      function openImage() {
+        var imgElement = document.getElementById("jsm02");
+        imgElement.innerHTML =
+          '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1024px-Flag_of_Bangladesh.svg.png" alt="Flag Image">';
+      }
+    </script>
+
+    <!-- TODO 03  -->
+    <!-- JavaScript Where To -->
+    <h2>TODO 03</h2>
+
+    <h3 id="jsm03"></h3>
+    <h4 id="jsm04"></h4>
+    <button type="button" onclick="document.write('love')">Delete all element</button>
+    <button onclick="window.print()">Print this page</button>
+    <p id="jsm05"></p>
+
+    <script>
+      document.getElementById("jsm03").innerHTML = "My First JavaScript";
+      document.getElementById("jsm04").innerHTML = 20000;
+      document.getElementById("jsm05").innerHTML = "John" + " "  + "Doe";
+      document.write(5 + 6);
+      // window.alert(5 + 6);
+      // alert(5 + 6);
+    </script>
+
+  
+  </body>
+</html>
